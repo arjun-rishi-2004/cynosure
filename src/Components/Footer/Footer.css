@@ -1,0 +1,17 @@
+.Footer{
+    width: 97.3%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+.Footer{
+    width: 90%;
+}
+}

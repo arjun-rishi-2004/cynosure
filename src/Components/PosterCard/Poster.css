@@ -1,0 +1,15 @@
+.Poster-img{
+    width: 75%;
+    height: 75%;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .Poster-img{
+        width: 70%;
+        height: 50%;
+        margin-left: 50px;
+    }
+}

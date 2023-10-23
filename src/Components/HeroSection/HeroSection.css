@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Kanit:ital,wght@1,300&display=swap');
+
+.hero {
+    background-image: url('./images/particle-burst-golden-sparkle-shimmer-background-illustration.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .logo-img {
+    width: 200px;
+    height: 180px;
+    margin-top: 30px;
+  }
+  .logo-name{
+    width: 350px;
+    height: auto;
+  }
+  
+  .title {
+    font-size: 55px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Black Ops One', cursive;
+  }
+  .one-let{
+    font-size: 75px;
+    color: #ff5733;
+  }
+  
+  .title-animation {
+    font-size: 24px;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Kanit', sans-serif;
+    color: #ff5733; 
+  }
+  .one-letter{
+    color: white;
+    font-size:32px ;
+  }
+  
+  .countdown {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  
+  button.register-button {
+    background-color: #ff5733;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  button.register-button:hover {
+    background-color: #ff834d; 
+  }
+  .countdown {
+    font-size: 22px;
+    margin-top: 20px;
+    animation: fadeIn 1s ease; 
+    background-color: #ff5733; 
+    color: white; 
+    padding: 10px 10px; 
+    border-radius: 5px; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+  }
+
+  @media screen and (max-width: 768px) {
+    .title {
+      font-size: 22px;
+    }
+  
+    .title-animation {
+      font-size: 18px;
+    }
+  
+    .logo-img {
+      width: 180px;
+      height: 180px;
+      margin-top: -230px;
+    }
+    .one-let{
+        font-size: 40px;
+        color: #ff5733;
+      }
+  
+    .countdown {
+        font-size: 22px;
+        margin-top: 20px;
+        animation: fadeIn 1s ease; 
+        background-color: #ff5733; 
+        color: white; 
+        padding: 5px 10px; 
+        border-radius: 5px; 
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+      }
+      
+      
+  
+    button.register-button {
+      padding: 12px 24px;
+      font-size: 16px;
+    }
+  }
+  

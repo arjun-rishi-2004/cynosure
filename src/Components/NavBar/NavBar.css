@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+
+:root {
+  --mainColor: black; 
+  --secondaryColor: #ff5733; 
+  --textColor: #fff; 
+}
+
+.custom-nav {
+  display: flex;
+  height: 90px;
+  font-family: 'Titillium Web', sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 33%, rgb(241, 89, 55) 100%);
+  padding: 10px 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.nav-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.logoName{
+    margin-left: 10px;
+    width: 180px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.nav-center {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  margin-right: 180px;
+
+}
+
+.nav-center a {
+  text-decoration: none;
+  color: var(--textColor);
+  font-weight: bold;
+  transition: color 0.4s ease;
+}
+
+.nav-center a:hover {
+  color: var(--secondaryColor);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-button {
+  background-color: var(--secondaryColor);
+  color: var(--textColor);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #ff834d; /* Change to the hover background color */
+}
+
+.mobile-menu {
+  display: none;
+  font-size: 1.8rem;
+  color: var(--textColor);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-nav {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+}
+
+.nav-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+  .nav-center {
+    margin-top: 73px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--mainColor);
+    position: absolute;
+    top: 95px;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .nav-center.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-button {
+    font-size: 1rem;
+    padding: 8px 16px;
+    margin: 5px;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
