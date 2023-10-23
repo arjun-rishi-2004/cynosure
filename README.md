@@ -1,3 +1,6 @@
+This website is create for my college for Department of CSE Cymposium 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
